@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Mariano Galvez - Verificación de Autenticación de Dos Factores</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificación de Autenticación de Dos Factores</h1>
+        <p>Por favor, ingrese el código generado por su aplicación de Google Authenticator.</p>
+
+        <form action="/2fa" method="post">
+            <label for="token">Código de Autenticación</label>
+            <input type="text" name="token" required placeholder="Ingrese su código de autenticación">
+
+            <button type="submit">Verificar</button>
+
+            <% if (typeof error !== 'undefined') { %>
+                <p class="error"><%= error %></p>
+            <% } %>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Banco Mariano Galvez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

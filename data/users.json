@@ -1,0 +1,8 @@
+[
+    {
+        "username": "testuser",
+        "password": "$2b$10$tVJxhROespGW32fC4eHeuu7hNSSzWxpMU1GW3bcGjqFzEpwY1Hxwy",
+        "twoFactorEnabled": true,
+        "twoFactorSecret": "IEZCQ43JNVWWWJTTJ4ZXWNKXGZWW6Q3RIB2W4S2NOVDUGQS5NRNA"
+    }
+]
